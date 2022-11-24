@@ -12,8 +12,8 @@
 
   foreach ($producto as $codigo => $elemento) {
     ?>
-    <img src="img/<?=$elemento[imagen]?>" width="360" border="1"><br>
-    <?=$elemento[nombre]?><br>Precio: <?=$elemento[precio]?> €
+    <img src="img/<?=$elemento['imagen']?>" width="360" border="1"><br>
+    <?=$elemento['nombre']?><br>Precio: <?=$elemento['precio']?> €
     <form action="pagina.php" method="post">
       <input type="hidden" name="ejercicio" value="05">
       <input type="hidden" name="codigo" value="<?=$codigo?>">
